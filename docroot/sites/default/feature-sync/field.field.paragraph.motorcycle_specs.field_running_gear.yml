@@ -1,0 +1,24 @@
+uuid: e931b304-cddc-4224-9b71-6e60f8cac106
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_running_gear
+    - paragraphs.paragraphs_type.motorcycle_specs
+  module:
+    - text
+id: paragraph.motorcycle_specs.field_running_gear
+field_name: field_running_gear
+entity_type: paragraph
+bundle: motorcycle_specs
+label: 'Running Gear'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: "<table>\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td class=\"specs-key\">Frame</td>\r\n\t\t\t<td class=\"specs-value\">XXX</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td class=\"specs-key\">Front Suspension</td>\r\n\t\t\t<td class=\"specs-value\">XXX</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td class=\"specs-key\">Rear Suspension</td>\r\n\t\t\t<td class=\"specs-value\">XXX</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td class=\"specs-key\">Front Brakes</td>\r\n\t\t\t<td class=\"specs-value\">XXX</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td class=\"specs-key\">Rear Brakes</td>\r\n\t\t\t<td class=\"specs-value\">XXX</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td class=\"specs-key\">Tires</td>\r\n\t\t\t<td class=\"specs-value\">XXX</td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n"
+    format: full_html
+default_value_callback: ''
+settings: {  }
+field_type: text_long

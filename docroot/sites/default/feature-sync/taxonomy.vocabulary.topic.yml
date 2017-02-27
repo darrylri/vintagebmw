@@ -1,0 +1,9 @@
+uuid: 6bfca153-f302-4a7d-9591-b23d3ce7f09c
+langcode: en
+status: true
+dependencies: {  }
+name: Topic
+vid: topic
+description: 'Node points for each area of the website'
+hierarchy: 0
+weight: 0

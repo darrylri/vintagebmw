@@ -1,0 +1,24 @@
+<?php
+/**
+ * @file
+ * Extra helpers for the site.
+ */
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function vbmw_extras_form_node_discussion_thread_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+//  $node = $form_state->getFormObject()->getEntity();
+  preg_match('@\btopic=(\d+)\b@i', $_SERVER['QUERY_STRING'], $matches);
+  if (!empty($matches[1])) {
+//    $form['field_main_topic']['widget'][0]['value']['#default_value'] = $matches[1];
+    $form['field_main_topic']['widget']['#default_value'] = $matches[1];
+  }
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+//function vbmw_extras_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+//  $node = $form_state->getFormObject()->getEntity();
+//}

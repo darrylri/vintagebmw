@@ -1,0 +1,18 @@
+uuid: 2740f217-8b69-4237-9c07-26d1f034c4a2
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.field_receives_magazine
+field_name: field_receives_magazine
+entity_type: taxonomy_term
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

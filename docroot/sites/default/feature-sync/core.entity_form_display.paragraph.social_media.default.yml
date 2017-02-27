@@ -1,0 +1,29 @@
+uuid: e9e89e3b-0955-45b6-8deb-022585af7fff
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.social_media.field_social_media_name
+    - field.field.paragraph.social_media.field_social_media_type
+    - paragraphs.paragraphs_type.social_media
+id: paragraph.social_media.default
+targetEntityType: paragraph
+bundle: social_media
+mode: default
+content:
+  field_social_media_name:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_social_media_type:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+hidden:
+  created: true
+  status: true
+  uid: true

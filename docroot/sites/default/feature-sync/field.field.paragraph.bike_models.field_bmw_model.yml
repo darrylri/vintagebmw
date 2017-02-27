@@ -1,0 +1,32 @@
+uuid: df4975c2-3110-4929-a2d4-3f54edc73145
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_bmw_model
+    - paragraphs.paragraphs_type.bike_models
+  module:
+    - geocoder_field
+third_party_settings:
+  geocoder_field:
+    method: none
+    field: parent_id
+    plugins: {  }
+    dumper: wkt
+    delta_handling: default
+    failure:
+      handling: preserve
+      status_message: true
+      log: true
+id: paragraph.bike_models.field_bmw_model
+field_name: field_bmw_model
+entity_type: paragraph
+bundle: bike_models
+label: 'BMW Model'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

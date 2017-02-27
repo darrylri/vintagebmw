@@ -1,0 +1,23 @@
+uuid: 1ba81d3f-4444-4a7f-8815-0eb4b06412bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_number_produced
+    - paragraphs.paragraphs_type.motorcycle_specs
+id: paragraph.motorcycle_specs.field_number_produced
+field_name: field_number_produced
+entity_type: paragraph
+bundle: motorcycle_specs
+label: 'Number Produced'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,30 @@
+uuid: 970cc513-9824-43d7-bf12-3126fe2eb8f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.discussion_thread.field_discussion
+    - field.field.node.discussion_thread.field_main_topic
+    - node.type.discussion_thread
+  module:
+    - text
+    - user
+id: node.discussion_thread.teaser
+targetEntityType: node
+bundle: discussion_thread
+mode: teaser
+content:
+  field_discussion:
+    type: text_trimmed
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_main_topic: true

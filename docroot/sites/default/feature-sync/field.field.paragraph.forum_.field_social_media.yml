@@ -1,0 +1,42 @@
+uuid: 76620785-5da1-4de0-8db2-cf4eb8029fa0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_social_media
+    - paragraphs.paragraphs_type.forum_
+    - paragraphs.paragraphs_type.social_media
+  module:
+    - entity_reference_revisions
+id: paragraph.forum_.field_social_media
+field_name: field_social_media
+entity_type: paragraph
+bundle: forum_
+label: 'Social Media'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      social_media: social_media
+    target_bundles_drag_drop:
+      forum_:
+        weight: 6
+        enabled: false
+      membership_pro:
+        weight: 7
+        enabled: false
+      motorcycle_specs:
+        weight: 8
+        enabled: false
+      serial_ranges:
+        weight: 9
+        enabled: false
+      social_media:
+        enabled: true
+        weight: 10
+field_type: entity_reference_revisions

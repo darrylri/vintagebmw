@@ -1,0 +1,28 @@
+uuid: 23ee6568-c0d9-487d-8f4f-6965d5407729
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_main_topic
+    - node.type.discussion_thread
+    - taxonomy.vocabulary.topic
+id: node.discussion_thread.field_main_topic
+field_name: field_main_topic
+entity_type: node
+bundle: discussion_thread
+label: 'Main Topic'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      topic: topic
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

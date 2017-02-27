@@ -1,0 +1,24 @@
+uuid: af7dbb5b-0d09-4f04-b84f-7be9bb237cd3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_capacities_and_measurement
+    - paragraphs.paragraphs_type.motorcycle_specs
+  module:
+    - text
+id: paragraph.motorcycle_specs.field_capacities_and_measurement
+field_name: field_capacities_and_measurement
+entity_type: paragraph
+bundle: motorcycle_specs
+label: 'Capacities and Measurements'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: "<table class\"specs-table\"><tbody>\r\n<tr><td class=\"specs-key\">Weight</td><td class=\"specs-value\">XXX</td></tr>\r\n<tr><td class=\"specs-key\">Fuel</td><td class=\"specs-value\">XXX</td></tr>\r\n<tr><td class=\"specs-key\">Wheelbase</td><td class=\"specs-value\">XXX</td></tr>\r\n<tr><td class=\"specs-key\">Top Speed</td><td class=\"specs-value\">XXX</td></tr>\r\n</tbody></table>\r\n"
+    format: full_html
+default_value_callback: ''
+settings: {  }
+field_type: text_long

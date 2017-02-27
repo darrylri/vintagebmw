@@ -1,0 +1,22 @@
+uuid: 0f016594-3599-4aee-b521-a084d1d92b6d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.rallies_and_events
+  module:
+    - text
+id: node.rallies_and_events.body
+field_name: body
+entity_type: node
+bundle: rallies_and_events
+label: Description
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

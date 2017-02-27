@@ -1,0 +1,79 @@
+uuid: d0eedc80-3ed3-42ff-afe9-9371466f6cf7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.rallies_and_events.body
+    - field.field.node.rallies_and_events.field_address
+    - field.field.node.rallies_and_events.field_dates
+    - field.field.node.rallies_and_events.field_location
+    - field.field.node.rallies_and_events.field_main_topic
+    - node.type.rallies_and_events
+  module:
+    - address
+    - datetime_range
+    - leaflet
+    - text
+    - user
+id: node.rallies_and_events.default
+targetEntityType: node
+bundle: rallies_and_events
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 3
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  field_address:
+    type: address_plain
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_dates:
+    weight: 1
+    label: above
+    settings:
+      separator: '-'
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: daterange_default
+  field_location:
+    type: leaflet_formatter_default
+    weight: 4
+    label: hidden
+    settings:
+      leaflet_map: 'OSM Mapnik'
+      height: 400
+      zoom: 10
+      minPossibleZoom: 0
+      maxPossibleZoom: 18
+      minZoom: 0
+      maxZoom: 18
+      popup: false
+      icon:
+        icon_url: ''
+        shadow_url: ''
+        icon_size:
+          x: 0
+          'y': 0
+        icon_anchor:
+          x: 0
+          'y': 0
+        shadow_anchor:
+          x: 0
+          'y': 0
+        popup_anchor:
+          x: 0
+          'y': 0
+    third_party_settings: {  }
+  links:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_main_topic: true

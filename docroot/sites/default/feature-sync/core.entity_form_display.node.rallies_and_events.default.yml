@@ -1,0 +1,86 @@
+uuid: 9d5a9e88-a263-44c8-94c6-54a1eb85311f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.rallies_and_events.body
+    - field.field.node.rallies_and_events.field_address
+    - field.field.node.rallies_and_events.field_dates
+    - field.field.node.rallies_and_events.field_location
+    - field.field.node.rallies_and_events.field_main_topic
+    - node.type.rallies_and_events
+  module:
+    - address
+    - datetime_range
+    - geofield
+    - path
+    - text
+id: node.rallies_and_events.default
+targetEntityType: node
+bundle: rallies_and_events
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 6
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+  created:
+    type: datetime_timestamp
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+  field_address:
+    weight: 7
+    settings:
+      default_country: US
+    third_party_settings: {  }
+    type: address_default
+  field_dates:
+    weight: 26
+    settings: {  }
+    third_party_settings: {  }
+    type: daterange_default
+  field_location:
+    weight: 8
+    settings:
+      html5_geolocation: false
+    third_party_settings: {  }
+    type: geofield_latlon
+  path:
+    type: path
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 3
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 4
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  field_main_topic: true

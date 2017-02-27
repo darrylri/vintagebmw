@@ -1,0 +1,32 @@
+uuid: 4dde1c47-e6d0-4e39-9a19-fec6ea104ca5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_phone_type
+    - paragraphs.paragraphs_type.telephone_number
+    - taxonomy.vocabulary.phone_number_type
+  content:
+    - 'taxonomy_term:phone_number_type:2cbf25d1-ee10-47a7-aaae-8d42216d86b3'
+id: paragraph.telephone_number.field_phone_type
+field_name: field_phone_type
+entity_type: paragraph
+bundle: telephone_number
+label: Type
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: 2cbf25d1-ee10-47a7-aaae-8d42216d86b3
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      phone_number_type: phone_number_type
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

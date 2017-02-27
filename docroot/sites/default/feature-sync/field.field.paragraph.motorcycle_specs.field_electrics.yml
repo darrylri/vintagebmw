@@ -1,0 +1,24 @@
+uuid: 7a8acc6c-6855-4586-8ac1-d7d2cfad8f0f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_electrics
+    - paragraphs.paragraphs_type.motorcycle_specs
+  module:
+    - text
+id: paragraph.motorcycle_specs.field_electrics
+field_name: field_electrics
+entity_type: paragraph
+bundle: motorcycle_specs
+label: Electrics
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: "<table class\"specs-table\"><tbody>\r\n<tr><td class=\"specs-key\">Ignition</td><td class=\"specs-value\">XXX</td></tr>\r\n<tr><td class=\"specs-key\">Spark Plugs</td><td class=\"specs-value\">XXX</td></tr>\r\n<tr><td class=\"specs-key\">Generator</td><td class=\"specs-value\">XXX</td></tr> \r\n</tbody></table>"
+    format: full_html
+default_value_callback: ''
+settings: {  }
+field_type: text_long

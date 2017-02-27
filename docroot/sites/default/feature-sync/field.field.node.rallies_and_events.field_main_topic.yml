@@ -1,0 +1,32 @@
+uuid: 822fcf9a-824b-4bba-8531-e22be906320f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_main_topic
+    - node.type.rallies_and_events
+    - taxonomy.vocabulary.topic
+  content:
+    - 'taxonomy_term:topic:18cdf4a5-0280-47ff-9a27-77a12656917c'
+id: node.rallies_and_events.field_main_topic
+field_name: field_main_topic
+entity_type: node
+bundle: rallies_and_events
+label: 'Main Topic'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    target_uuid: 18cdf4a5-0280-47ff-9a27-77a12656917c
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      topic: topic
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,31 @@
+uuid: 1cee9751-eaa2-482a-b0af-5f90a0283a51
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bike_models.field_bmw_model
+    - field.field.paragraph.bike_models.field_year
+    - paragraphs.paragraphs_type.bike_models
+id: paragraph.bike_models.default
+targetEntityType: paragraph
+bundle: bike_models
+mode: default
+content:
+  field_bmw_model:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_year:
+    weight: 0
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+hidden:
+  created: true
+  uid: true

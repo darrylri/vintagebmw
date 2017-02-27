@@ -1,0 +1,6 @@
+uuid: 370e63f8-bebc-46b5-9a26-f2c8515bd666
+langcode: en
+status: true
+dependencies: {  }
+id: motorcycle_specs
+label: 'Motorcycle Specs'

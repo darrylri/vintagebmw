@@ -1,0 +1,33 @@
+uuid: c8cd314d-a80f-40e0-a379-13c3cd6d4551
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_motorcycle_specifications
+    - node.type.motorcycle_model
+    - paragraphs.paragraphs_type.motorcycle_specs
+  module:
+    - entity_reference_revisions
+id: node.motorcycle_model.field_motorcycle_specifications
+field_name: field_motorcycle_specifications
+entity_type: node
+bundle: motorcycle_model
+label: 'Motorcycle Specifications'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      motorcycle_specs: motorcycle_specs
+    target_bundles_drag_drop:
+      motorcycle_specs:
+        enabled: true
+        weight: 3
+      serial_ranges:
+        weight: 4
+        enabled: false
+field_type: entity_reference_revisions

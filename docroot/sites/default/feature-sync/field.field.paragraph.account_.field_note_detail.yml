@@ -1,0 +1,33 @@
+uuid: c26f7c50-f409-4877-815b-03a5127197fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_note_detail
+    - paragraphs.paragraphs_type.account_
+  module:
+    - geocoder_field
+    - text
+third_party_settings:
+  geocoder_field:
+    method: none
+    field: parent_id
+    plugins: {  }
+    dumper: wkt
+    delta_handling: default
+    failure:
+      handling: preserve
+      status_message: true
+      log: true
+id: paragraph.account_.field_note_detail
+field_name: field_note_detail
+entity_type: paragraph
+bundle: account_
+label: 'Note Detail'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

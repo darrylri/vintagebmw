@@ -1,0 +1,19 @@
+uuid: dbd6b5c4-0a05-4fd8-9a13-e01cf727de5e
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - paragraphs
+id: paragraph.field_personal_website
+field_name: field_personal_website
+entity_type: paragraph
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

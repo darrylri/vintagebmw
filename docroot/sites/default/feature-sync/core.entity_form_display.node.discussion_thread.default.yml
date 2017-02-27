@@ -1,0 +1,73 @@
+uuid: 318eebda-3da5-4fa3-83bd-112bbf67bb3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.discussion_thread.comment
+    - field.field.node.discussion_thread.field_discussion
+    - field.field.node.discussion_thread.field_main_topic
+    - node.type.discussion_thread
+  module:
+    - comment
+    - path
+    - text
+id: node.discussion_thread.default
+targetEntityType: node
+bundle: discussion_thread
+mode: default
+content:
+  comment:
+    weight: 26
+    settings: {  }
+    third_party_settings: {  }
+    type: comment_default
+  created:
+    type: datetime_timestamp
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+  field_discussion:
+    weight: 7
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+  field_main_topic:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+  path:
+    type: path
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 3
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 4
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

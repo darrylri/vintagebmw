@@ -1,0 +1,6 @@
+uuid: 1b92fad4-ce10-48ef-9d0b-c051baa5a569
+langcode: en
+status: true
+dependencies: {  }
+id: serial_ranges
+label: 'Serial Ranges'

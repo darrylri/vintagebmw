@@ -1,0 +1,40 @@
+uuid: addf0f79-0b48-4763-ba8f-1ca8e8701140
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.membership_status.field_participating_m
+    - field.field.taxonomy_term.membership_status.field_receives_magazine
+    - taxonomy.vocabulary.membership_status
+  module:
+    - text
+id: taxonomy_term.membership_status.default
+targetEntityType: taxonomy_term
+bundle: membership_status
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+  field_participating_m:
+    weight: 2
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+  field_receives_magazine:
+    weight: 1
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+hidden: {  }

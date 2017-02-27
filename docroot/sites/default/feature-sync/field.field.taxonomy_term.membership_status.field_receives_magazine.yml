@@ -1,0 +1,23 @@
+uuid: 885532b2-99be-40da-87d6-15ff8c98ad6c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_receives_magazine
+    - taxonomy.vocabulary.membership_status
+id: taxonomy_term.membership_status.field_receives_magazine
+field_name: field_receives_magazine
+entity_type: taxonomy_term
+bundle: membership_status
+label: 'Receives magazine'
+description: 'Check if members with this status are mailed the magazine.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

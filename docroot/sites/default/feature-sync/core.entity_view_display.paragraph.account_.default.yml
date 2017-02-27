@@ -1,0 +1,45 @@
+uuid: 9fa7ea9b-7da9-4c49-a5d2-962ff0f2c685
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.account_.field_note_detail
+    - field.field.paragraph.account_.field_note_title
+    - paragraphs.paragraphs_type.account_
+  module:
+    - text
+    - user
+id: paragraph.account_.default
+targetEntityType: paragraph
+bundle: account_
+mode: default
+content:
+  created:
+    type: timestamp
+    weight: 1
+    label: hidden
+    settings:
+      date_format: short
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+  field_note_detail:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_note_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  uid:
+    type: author
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

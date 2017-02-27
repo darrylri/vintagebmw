@@ -1,0 +1,26 @@
+uuid: 8c9b90b1-0401-4cd1-a520-e239936581db
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment
+    - core.entity_view_mode.comment.discussion_listing
+    - field.field.comment.comment.comment_body
+  module:
+    - text
+_core:
+  default_config_hash: 1yBeJcGufCbnbSolmaYgTIXZWYUaO7kw6xszGA8TYs8
+id: comment.comment.discussion_listing
+targetEntityType: comment
+bundle: comment
+mode: discussion_listing
+content:
+  comment_body:
+    label: hidden
+    type: text_trimmed
+    weight: 0
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+hidden:
+  links: true

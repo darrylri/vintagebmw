@@ -1,0 +1,19 @@
+uuid: b1db2a07-ba59-4c07-946c-87356a1e5692
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - range
+id: paragraph.field_frame_numbers
+field_name: field_frame_numbers
+entity_type: paragraph
+type: range_integer
+settings: {  }
+module: range
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

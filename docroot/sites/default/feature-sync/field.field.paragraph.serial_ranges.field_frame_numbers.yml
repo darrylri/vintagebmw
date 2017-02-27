@@ -1,0 +1,29 @@
+uuid: ccd9698d-49c7-47bf-90ec-8c0afd911a51
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_frame_numbers
+    - paragraphs.paragraphs_type.serial_ranges
+  module:
+    - range
+id: paragraph.serial_ranges.field_frame_numbers
+field_name: field_frame_numbers
+entity_type: paragraph
+bundle: serial_ranges
+label: 'Frame Numbers'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: null
+  from:
+    prefix: ''
+    suffix: ''
+  to:
+    prefix: ''
+    suffix: ''
+field_type: range_integer

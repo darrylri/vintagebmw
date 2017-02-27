@@ -1,0 +1,35 @@
+uuid: 8df68790-c79a-4c56-b1cd-bd8395cda462
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_address
+    - node.type.rallies_and_events
+  module:
+    - address
+id: node.rallies_and_events.field_address
+field_name: field_address
+entity_type: node
+bundle: rallies_and_events
+label: 'Rally/Event Address'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  available_countries: {  }
+  fields:
+    administrativeArea: administrativeArea
+    locality: locality
+    dependentLocality: dependentLocality
+    postalCode: postalCode
+    addressLine1: addressLine1
+    addressLine2: addressLine2
+    organization: organization
+    sortingCode: '0'
+    givenName: '0'
+    additionalName: '0'
+    familyName: '0'
+  langcode_override: ''
+field_type: address

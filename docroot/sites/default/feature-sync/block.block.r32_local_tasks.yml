@@ -1,0 +1,22 @@
+uuid: afe44554-5e41-4842-8f4f-d10e2f9df031
+langcode: en
+status: true
+dependencies:
+  theme:
+    - r32
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: r32_local_tasks
+theme: r32
+region: content
+weight: -8
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }
