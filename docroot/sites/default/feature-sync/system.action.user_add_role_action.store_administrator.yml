@@ -1,0 +1,14 @@
+uuid: 07398007-c8f5-447e-b537-c9222346fd90
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.store_administrator
+  module:
+    - user
+id: user_add_role_action.store_administrator
+label: 'Add the Store Administrator role to the selected users'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: store_administrator

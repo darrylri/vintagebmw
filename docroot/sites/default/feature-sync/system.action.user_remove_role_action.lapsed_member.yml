@@ -1,0 +1,14 @@
+uuid: 96d48ff0-2dbb-4a45-b04e-99b71c3daa96
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.lapsed_member
+  module:
+    - user
+id: user_remove_role_action.lapsed_member
+label: 'Remove the Lapsed Member role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: lapsed_member

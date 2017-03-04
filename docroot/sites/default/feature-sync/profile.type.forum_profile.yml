@@ -1,0 +1,14 @@
+uuid: bddd5a77-3320-4f55-a633-6df2a52657fe
+langcode: en
+status: true
+dependencies: {  }
+id: forum_profile
+label: 'Forum Profile'
+registration: true
+multiple: false
+roles:
+  authenticated: authenticated
+  administrator: '0'
+  member: '0'
+  lapsed_member: '0'
+weight: 0

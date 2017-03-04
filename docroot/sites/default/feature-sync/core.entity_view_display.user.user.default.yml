@@ -3,14 +3,36 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.user.user.field_forum_profile
-    - field.field.user.user.field_member
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
-    - entity_reference_revisions
+    - ds
     - image
     - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      path: modules/contrib/ds
+      library: layout_plugin/ds_2col
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          left: div
+          right: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - user_picture
+        - member_for
+        - profile_membership_profile
+        - profile_forum_profile
 _core:
   default_config_hash: L2mtwGWH_7wDRCMIR4r_Iu_jmvQ10DV1L8ht8iNZ5qY
 id: user.user.default
@@ -18,24 +40,18 @@ targetEntityType: user
 bundle: user
 mode: default
 content:
-  field_forum_profile:
-    type: entity_reference_revisions_entity_view
-    weight: 6
-    label: above
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-  field_member:
-    type: entity_reference_revisions_entity_view
-    weight: 7
-    label: above
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
   member_for:
-    weight: 5
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+  profile_forum_profile:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+  profile_membership_profile:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
   user_picture:
     type: image
     weight: 0

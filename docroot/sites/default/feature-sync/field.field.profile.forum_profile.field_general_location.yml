@@ -1,0 +1,32 @@
+uuid: 57e8f3ac-c18f-4c27-9cec-9b91e43e7a6c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_general_location
+    - profile.type.forum_profile
+  module:
+    - geocoder_field
+third_party_settings:
+  geocoder_field:
+    method: none
+    field: ''
+    plugins: {  }
+    dumper: wkt
+    delta_handling: default
+    failure:
+      handling: preserve
+      status_message: true
+      log: true
+id: profile.forum_profile.field_general_location
+field_name: field_general_location
+entity_type: profile
+bundle: forum_profile
+label: 'General Location'
+description: 'Your general area, so people can respond to your posts with more relevant information.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,48 @@
+uuid: 56749b4b-c8b0-4616-9283-b860527973d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_my_bike_models
+    - paragraphs.paragraphs_type.bike_models
+    - profile.type.forum_profile
+  module:
+    - entity_reference_revisions
+id: profile.forum_profile.field_my_bike_models
+field_name: field_my_bike_models
+entity_type: profile
+bundle: forum_profile
+label: 'My Bike Models'
+description: 'List your bike(s) so people can respond more specifically to any questions you might post.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      bike_models: bike_models
+    target_bundles_drag_drop:
+      account_:
+        weight: 8
+        enabled: false
+      bike_models:
+        enabled: true
+        weight: 9
+      forum_:
+        weight: 10
+        enabled: false
+      motorcycle_specs:
+        weight: 11
+        enabled: false
+      serial_ranges:
+        weight: 12
+        enabled: false
+      social_media:
+        weight: 13
+        enabled: false
+      telephone_number:
+        weight: 14
+        enabled: false
+field_type: entity_reference_revisions

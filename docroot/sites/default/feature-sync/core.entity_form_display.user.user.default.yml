@@ -3,13 +3,10 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.user.user.field_forum_profile
-    - field.field.user.user.field_member
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
     - image
-    - paragraphs
     - path
     - user
 _core:
@@ -23,26 +20,6 @@ content:
     weight: -10
   contact:
     weight: 5
-  field_forum_profile:
-    type: entity_reference_paragraphs
-    weight: 31
-    settings:
-      title: Paragraph
-      title_plural: Paragraphs
-      edit_mode: open
-      add_mode: dropdown
-      form_display_mode: default
-    third_party_settings: {  }
-  field_member:
-    type: entity_reference_paragraphs
-    weight: 32
-    settings:
-      title: Paragraph
-      title_plural: Paragraphs
-      edit_mode: open
-      add_mode: dropdown
-      form_display_mode: default
-    third_party_settings: {  }
   language:
     weight: 0
   path:

@@ -1,0 +1,32 @@
+uuid: 459c79db-5677-46c6-8eba-6981910dd44b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_membership_status
+    - profile.type.membership_profile
+    - taxonomy.vocabulary.membership_status
+  content:
+    - 'taxonomy_term:membership_status:1dfef467-fb44-4236-b458-22f9552cf6c5'
+id: profile.membership_profile.field_membership_status
+field_name: field_membership_status
+entity_type: profile
+bundle: membership_profile
+label: 'Membership Status'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: 1dfef467-fb44-4236-b458-22f9552cf6c5
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      membership_status: membership_status
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

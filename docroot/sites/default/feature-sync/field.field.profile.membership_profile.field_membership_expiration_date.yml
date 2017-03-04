@@ -1,0 +1,21 @@
+uuid: 08334dd7-955f-4619-a0af-1ddffffdac08
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_membership_expiration_date
+    - profile.type.membership_profile
+  module:
+    - datetime
+id: profile.membership_profile.field_membership_expiration_date
+field_name: field_membership_expiration_date
+entity_type: profile
+bundle: membership_profile
+label: 'Membership Expiration Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

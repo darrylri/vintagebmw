@@ -1,0 +1,17 @@
+uuid: 0900b852-3783-4625-8e9c-ffec4b2a395d
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Vintage Video'
+type: vintage_video
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

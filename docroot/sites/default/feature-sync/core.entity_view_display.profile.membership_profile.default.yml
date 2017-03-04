@@ -1,0 +1,147 @@
+uuid: ccab28e0-c6f7-4a99-bacf-3703d7673bcf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.profile.membership_profile.field_account_notes
+    - field.field.profile.membership_profile.field_first_name
+    - field.field.profile.membership_profile.field_last_name
+    - field.field.profile.membership_profile.field_mailing_address
+    - field.field.profile.membership_profile.field_membership_expiration_date
+    - field.field.profile.membership_profile.field_membership_status
+    - field.field.profile.membership_profile.field_middle_name
+    - field.field.profile.membership_profile.field_phone_numbers
+    - field.field.profile.membership_profile.field_return_message
+    - field.field.profile.membership_profile.field_suffix
+    - field.field.profile.membership_profile.field_title
+    - field.field.profile.membership_profile.field_vbmwmo_membership_number
+    - profile.type.membership_profile
+  module:
+    - address
+    - datetime
+    - ds
+    - entity_reference_revisions
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      path: modules/contrib/ds
+      library: ''
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - field_vbmwmo_membership_number
+        - field_membership_expiration_date
+        - field_membership_status
+        - field_return_message
+        - field_title
+        - field_first_name
+        - field_middle_name
+        - field_last_name
+        - field_suffix
+        - field_mailing_address
+        - field_phone_numbers
+        - field_account_notes
+id: profile.membership_profile.default
+targetEntityType: profile
+bundle: membership_profile
+mode: default
+content:
+  field_account_notes:
+    type: entity_reference_revisions_entity_view
+    weight: 11
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+  field_first_name:
+    weight: 5
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_last_name:
+    weight: 7
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_mailing_address:
+    weight: 9
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+  field_membership_expiration_date:
+    weight: 1
+    label: inline
+    settings:
+      timezone_override: ''
+      format_type: short_month_text_year
+    third_party_settings: {  }
+    type: datetime_default
+  field_membership_status:
+    weight: 2
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_middle_name:
+    weight: 6
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_phone_numbers:
+    type: entity_reference_revisions_entity_view
+    weight: 10
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+  field_return_message:
+    weight: 3
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_suffix:
+    weight: 8
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_title:
+    weight: 4
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_vbmwmo_membership_number:
+    weight: 0
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+hidden: {  }

@@ -1,0 +1,8 @@
+uuid: 91c91dcc-2c06-4aba-b833-ae1712c0d67c
+langcode: en
+status: true
+dependencies: {  }
+id: short_day_month_text_year
+label: 'Short Day Month Text Year'
+locked: false
+pattern: 'M j, Y'

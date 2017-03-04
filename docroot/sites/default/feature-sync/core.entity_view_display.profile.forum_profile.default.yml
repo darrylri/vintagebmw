@@ -1,0 +1,86 @@
+uuid: b0abcb24-5e9c-43bc-b951-d3bd47548a89
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.profile.forum_profile.field_general_location
+    - field.field.profile.forum_profile.field_more_about_me
+    - field.field.profile.forum_profile.field_my_bike_models
+    - field.field.profile.forum_profile.field_personal_website
+    - field.field.profile.forum_profile.field_social_media
+    - profile.type.forum_profile
+  module:
+    - ds
+    - entity_reference_revisions
+    - link
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      path: modules/contrib/ds
+      library: ''
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - field_my_bike_models
+        - field_general_location
+        - field_social_media
+        - field_personal_website
+        - field_more_about_me
+id: profile.forum_profile.default
+targetEntityType: profile
+bundle: forum_profile
+mode: default
+content:
+  field_general_location:
+    weight: 1
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_more_about_me:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_my_bike_models:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+  field_personal_website:
+    weight: 3
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+  field_social_media:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+hidden: {  }

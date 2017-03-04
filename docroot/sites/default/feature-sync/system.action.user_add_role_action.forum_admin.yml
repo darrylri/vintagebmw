@@ -1,0 +1,14 @@
+uuid: b034310c-6beb-4beb-b3dc-a69d129d68e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.forum_admin
+  module:
+    - user
+id: user_add_role_action.forum_admin
+label: 'Add the Forum Admin role to the selected users'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: forum_admin

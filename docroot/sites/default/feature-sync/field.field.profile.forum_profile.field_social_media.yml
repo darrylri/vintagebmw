@@ -1,0 +1,48 @@
+uuid: 2487ec40-666e-434d-813d-8a1f1f34df93
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_social_media
+    - paragraphs.paragraphs_type.social_media
+    - profile.type.forum_profile
+  module:
+    - entity_reference_revisions
+id: profile.forum_profile.field_social_media
+field_name: field_social_media
+entity_type: profile
+bundle: forum_profile
+label: 'Social Media'
+description: 'List your accounts on social media platforms.  Click Add Another to keep adding them'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      social_media: social_media
+    target_bundles_drag_drop:
+      account_:
+        weight: 8
+        enabled: false
+      bike_models:
+        weight: 9
+        enabled: false
+      forum_:
+        weight: 10
+        enabled: false
+      motorcycle_specs:
+        weight: 11
+        enabled: false
+      serial_ranges:
+        weight: 12
+        enabled: false
+      social_media:
+        enabled: true
+        weight: 13
+      telephone_number:
+        weight: 14
+        enabled: false
+field_type: entity_reference_revisions

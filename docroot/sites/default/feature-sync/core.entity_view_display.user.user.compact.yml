@@ -26,3 +26,5 @@ content:
     label: hidden
 hidden:
   member_for: true
+  profile_forum_profile: true
+  profile_membership_profile: true

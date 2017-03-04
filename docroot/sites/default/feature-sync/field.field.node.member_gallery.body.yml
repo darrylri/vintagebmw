@@ -1,0 +1,22 @@
+uuid: 832303f9-ab76-4690-a2a1-9008d75e5ec1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.member_gallery
+  module:
+    - text
+id: node.member_gallery.body
+field_name: body
+entity_type: node
+bundle: member_gallery
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

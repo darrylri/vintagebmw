@@ -1,0 +1,23 @@
+uuid: 1db6b160-2ed2-4189-b439-ed34514fb6f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_personal_website
+    - profile.type.forum_profile
+  module:
+    - link
+id: profile.forum_profile.field_personal_website
+field_name: field_personal_website
+entity_type: profile
+bundle: forum_profile
+label: 'Personal Website'
+description: 'If you have a website or a photo gallery, why not share it with the community?'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

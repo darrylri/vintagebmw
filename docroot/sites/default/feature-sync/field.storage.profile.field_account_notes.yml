@@ -1,0 +1,25 @@
+uuid: 04763861-8e2b-4d2f-80b5-fa79ab363d7a
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - field_permissions
+    - paragraphs
+    - profile
+third_party_settings:
+  field_permissions:
+    permission_type: custom
+id: profile.field_account_notes
+field_name: field_account_notes
+entity_type: profile
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,32 @@
+uuid: 571538df-539e-4cf1-b331-6b5287233025
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_return_message
+    - profile.type.membership_profile
+  module:
+    - geocoder_field
+third_party_settings:
+  geocoder_field:
+    method: none
+    field: field_first_name
+    plugins: {  }
+    dumper: wkt
+    delta_handling: default
+    failure:
+      handling: preserve
+      status_message: true
+      log: true
+id: profile.membership_profile.field_return_message
+field_name: field_return_message
+entity_type: profile
+bundle: membership_profile
+label: 'Return Message'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

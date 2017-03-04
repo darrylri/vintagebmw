@@ -1,0 +1,25 @@
+uuid: a068ff11-b122-44a5-8d4a-521e5c0ea975
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - field_permissions
+    - paragraphs
+    - profile
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: profile.field_my_bike_models
+field_name: field_my_bike_models
+entity_type: profile
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

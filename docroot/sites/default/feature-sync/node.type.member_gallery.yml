@@ -1,0 +1,18 @@
+uuid: 3363db9d-eed0-43d8-8609-04f6af5551fa
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Member Gallery'
+type: member_gallery
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

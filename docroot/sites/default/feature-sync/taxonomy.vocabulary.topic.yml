@@ -5,5 +5,5 @@ dependencies: {  }
 name: Topic
 vid: topic
 description: 'Node points for each area of the website'
-hierarchy: 0
+hierarchy: 1
 weight: 0

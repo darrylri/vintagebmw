@@ -1,0 +1,18 @@
+uuid: ed28e987-bb35-45a6-8d0b-4d11ae354979
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.resource
+id: node.resource.title
+field_name: title
+entity_type: node
+bundle: resource
+label: 'Business or Person'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

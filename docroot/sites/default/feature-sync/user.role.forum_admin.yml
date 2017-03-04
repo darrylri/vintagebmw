@@ -1,0 +1,9 @@
+uuid: be3ddded-98fd-49ee-8361-10ae56b9d91f
+langcode: en
+status: true
+dependencies: {  }
+id: forum_admin
+label: 'Forum Admin'
+weight: 8
+is_admin: null
+permissions: {  }

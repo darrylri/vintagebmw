@@ -1,0 +1,9 @@
+uuid: e3972b95-7a29-4867-9744-056f69476d26
+langcode: en
+status: true
+dependencies: {  }
+name: 'Resource Tags'
+vid: resource_tags
+description: ''
+hierarchy: 0
+weight: 0

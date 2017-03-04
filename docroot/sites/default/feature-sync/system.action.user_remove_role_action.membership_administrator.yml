@@ -1,0 +1,14 @@
+uuid: fe56cb11-1cba-45d8-afd5-86fea4356184
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.membership_administrator
+  module:
+    - user
+id: user_remove_role_action.membership_administrator
+label: 'Remove the Membership Administrator role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: membership_administrator

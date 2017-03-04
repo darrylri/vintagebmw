@@ -1,0 +1,62 @@
+uuid: 9aaca300-ef9b-4b4a-ab6d-1c3e2bfd6257
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.profile.forum_profile.field_general_location
+    - field.field.profile.forum_profile.field_more_about_me
+    - field.field.profile.forum_profile.field_my_bike_models
+    - field.field.profile.forum_profile.field_personal_website
+    - field.field.profile.forum_profile.field_social_media
+    - profile.type.forum_profile
+  module:
+    - link
+    - paragraphs
+    - text
+id: profile.forum_profile.default
+targetEntityType: profile
+bundle: forum_profile
+mode: default
+content:
+  field_general_location:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: 'Eg: Woodcliff, NJ or Munich, Germany'
+    third_party_settings: {  }
+    type: string_textfield
+  field_more_about_me:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+  field_my_bike_models:
+    type: entity_reference_paragraphs
+    weight: 2
+    settings:
+      title: 'Bike Owned'
+      title_plural: 'Bikes Owned'
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+    third_party_settings: {  }
+  field_personal_website:
+    weight: 4
+    settings:
+      placeholder_url: 'Eg: http://www.example.com'
+      placeholder_title: 'Eg: John Doe''s BMW Bike website'
+    third_party_settings: {  }
+    type: link_default
+  field_social_media:
+    type: entity_reference_paragraphs
+    weight: 3
+    settings:
+      title: 'Social Media Account'
+      title_plural: 'Social Media Accounts'
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+    third_party_settings: {  }
+hidden: {  }

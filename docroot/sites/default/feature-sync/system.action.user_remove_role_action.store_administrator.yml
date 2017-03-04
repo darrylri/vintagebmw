@@ -1,0 +1,14 @@
+uuid: f54de692-9598-4816-aca7-a275ee01d358
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.store_administrator
+  module:
+    - user
+id: user_remove_role_action.store_administrator
+label: 'Remove the Store Administrator role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: store_administrator

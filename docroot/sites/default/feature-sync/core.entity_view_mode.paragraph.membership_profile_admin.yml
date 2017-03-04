@@ -1,0 +1,10 @@
+uuid: 9f51973c-1ad2-462a-a8e9-ea6f3fadea56
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.membership_profile_admin
+label: 'Membership Profile - Admin'
+targetEntityType: paragraph
+cache: true

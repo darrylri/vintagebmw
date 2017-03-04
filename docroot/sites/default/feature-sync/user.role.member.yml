@@ -1,0 +1,13 @@
+uuid: 72f3355a-7e5e-4421-8d7f-bcfa0f3ad6b5
+langcode: en
+status: true
+dependencies: {  }
+id: member
+label: Member
+weight: 3
+is_admin: null
+permissions:
+  - 'view own field_membership_expiration'
+  - 'view own field_membership_status'
+  - 'view own field_membership_number'
+  - 'view own field_membership_expiration_date'

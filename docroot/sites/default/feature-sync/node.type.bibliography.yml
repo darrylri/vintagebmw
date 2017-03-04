@@ -1,0 +1,17 @@
+uuid: 7b5b7edc-5faf-4220-a24f-f2b70663e9ff
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: BIbliography
+type: bibliography
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,8 @@
+uuid: da1e686d-eb91-4511-a145-f60664e29da3
+langcode: en
+status: true
+dependencies: {  }
+id: short_month_text_year
+label: 'Short Month Text Year'
+locked: false
+pattern: 'M Y'

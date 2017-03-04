@@ -1,0 +1,36 @@
+uuid: 38af912c-a4b9-400e-a7f5-c6764982f41a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.vintage_video.body
+    - field.field.node.vintage_video.field_video
+    - node.type.vintage_video
+  module:
+    - text
+    - user
+    - video_embed_field
+id: node.vintage_video.default
+targetEntityType: node
+bundle: vintage_video
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  field_video:
+    weight: 102
+    label: above
+    settings:
+      responsive: true
+      width: 854
+      height: 480
+      autoplay: true
+    third_party_settings: {  }
+    type: video_embed_field_video
+  links:
+    weight: 100
+hidden: {  }

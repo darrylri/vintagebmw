@@ -1,0 +1,91 @@
+uuid: 031ad662-d1d9-4637-85a6-397db3dd8b3c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.bibliography.body
+    - field.field.node.bibliography.field_author
+    - field.field.node.bibliography.field_bibliographic_tags
+    - field.field.node.bibliography.field_isbn
+    - field.field.node.bibliography.field_publisher
+    - node.type.bibliography
+  module:
+    - path
+    - text
+id: node.bibliography.default
+targetEntityType: node
+bundle: bibliography
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 10
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+  created:
+    type: datetime_timestamp
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+  field_author:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_bibliographic_tags:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+  field_isbn:
+    weight: 9
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_publisher:
+    weight: 8
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  path:
+    type: path
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 3
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 4
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,13 @@
+uuid: fbbfbab7-f81e-44e8-bc7e-5e33321a7037
+langcode: en
+status: true
+dependencies: {  }
+id: lapsed_member
+label: 'Lapsed Member'
+weight: 4
+is_admin: null
+permissions:
+  - 'view own field_membership_expiration'
+  - 'view own field_membership_status'
+  - 'view own field_membership_number'
+  - 'view own field_membership_expiration_date'

@@ -1,0 +1,39 @@
+uuid: f7281684-9916-4a4c-b374-182576e3c478
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.bibliography.body
+    - field.field.node.bibliography.field_author
+    - field.field.node.bibliography.field_bibliographic_tags
+    - field.field.node.bibliography.field_isbn
+    - field.field.node.bibliography.field_publisher
+    - node.type.bibliography
+  module:
+    - text
+    - user
+id: node.bibliography.teaser
+targetEntityType: node
+bundle: bibliography
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 1
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  field_author:
+    type: string
+    weight: 0
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  field_bibliographic_tags: true
+  field_isbn: true
+  field_publisher: true
+  links: true

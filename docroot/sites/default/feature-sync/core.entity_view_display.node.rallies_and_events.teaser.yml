@@ -6,12 +6,10 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.rallies_and_events.body
     - field.field.node.rallies_and_events.field_address
-    - field.field.node.rallies_and_events.field_dates
     - field.field.node.rallies_and_events.field_location
     - field.field.node.rallies_and_events.field_main_topic
     - node.type.rallies_and_events
   module:
-    - datetime_range
     - text
     - user
 id: node.rallies_and_events.teaser
@@ -25,15 +23,6 @@ content:
     weight: 1
     settings:
       trim_length: 600
-    third_party_settings: {  }
-  field_dates:
-    type: daterange_default
-    weight: 0
-    label: hidden
-    settings:
-      separator: '-'
-      format_type: medium
-      timezone_override: ''
     third_party_settings: {  }
 hidden:
   field_address: true

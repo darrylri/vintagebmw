@@ -1,0 +1,14 @@
+uuid: 522bcf58-697c-413e-91e1-0a59c1cda750
+langcode: en
+status: true
+dependencies: {  }
+id: membership_profile
+label: 'Membership Profile'
+registration: false
+multiple: false
+roles:
+  member: member
+  lapsed_member: lapsed_member
+  authenticated: '0'
+  administrator: '0'
+weight: 0

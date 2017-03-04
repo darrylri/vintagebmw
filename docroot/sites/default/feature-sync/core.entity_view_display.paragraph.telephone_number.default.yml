@@ -6,6 +6,31 @@ dependencies:
     - field.field.paragraph.telephone_number.field_phone_number
     - field.field.paragraph.telephone_number.field_phone_type
     - paragraphs.paragraphs_type.telephone_number
+  module:
+    - ds
+third_party_settings:
+  ds:
+    layout:
+      id: ds_2col
+      path: modules/contrib/ds
+      library: layout_plugin/ds_2col
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          left: div
+          right: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      left:
+        - field_phone_type
+      right:
+        - field_phone_number
 id: paragraph.telephone_number.default
 targetEntityType: paragraph
 bundle: telephone_number

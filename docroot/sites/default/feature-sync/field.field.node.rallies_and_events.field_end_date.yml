@@ -1,0 +1,24 @@
+uuid: c6c5eae2-fac6-4741-9a24-dcab3247a764
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_end_date
+    - node.type.rallies_and_events
+  module:
+    - datetime
+id: node.rallies_and_events.field_end_date
+field_name: field_end_date
+entity_type: node
+bundle: rallies_and_events
+label: 'End Date'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

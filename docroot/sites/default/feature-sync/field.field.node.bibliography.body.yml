@@ -1,0 +1,22 @@
+uuid: 304ef973-4c8e-4860-834b-2a0d7f501ed8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.bibliography
+  module:
+    - text
+id: node.bibliography.body
+field_name: body
+entity_type: node
+bundle: bibliography
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

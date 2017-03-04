@@ -6,16 +6,16 @@ definitions:
     weight: 0
     expanded: false
   'taxonomy_menu__menu_link:taxonomy_menu__menu_link__topics__16':
-    weight: -48
+    weight: -45
     menu_name: main
     parent: ''
+    expanded: true
     enabled: true
-    expanded: false
   'taxonomy_menu__menu_link:taxonomy_menu__menu_link__topics__10':
-    weight: -47
+    weight: -44
     menu_name: main
     parent: ''
-    expanded: false
+    expanded: true
     enabled: true
   standard__front_page:
     weight: -50
@@ -27,31 +27,31 @@ definitions:
     weight: -49
     menu_name: main
     parent: ''
-    expanded: false
+    expanded: true
     enabled: true
   'taxonomy_menu__menu_link:taxonomy_menu__menu_link__topics__3':
     weight: -46
     menu_name: main
     parent: ''
-    expanded: false
+    expanded: true
     enabled: true
   'taxonomy_menu__menu_link:taxonomy_menu__menu_link__topics__4':
-    weight: -43
+    weight: -41
     menu_name: main
     parent: ''
-    expanded: false
+    expanded: true
     enabled: true
   'taxonomy_menu__menu_link:taxonomy_menu__menu_link__topics__2':
-    weight: -45
+    weight: -48
     menu_name: main
     parent: ''
-    expanded: false
+    expanded: true
     enabled: true
   'taxonomy_menu__menu_link:taxonomy_menu__menu_link__topics__5':
-    weight: -44
+    weight: -47
     menu_name: main
     parent: ''
-    expanded: false
+    expanded: true
     enabled: true
   'taxonomy_menu__menu_link:taxonomy_menu__menu_link__topics__6':
     weight: -50
@@ -81,6 +81,18 @@ definitions:
     weight: -49
     menu_name: main
     parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.topics.16'
+    expanded: true
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__topics__55':
+    weight: -42
+    menu_name: main
+    parent: ''
+    enabled: true
+    expanded: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__topics__56':
+    weight: -43
+    menu_name: main
+    parent: ''
     expanded: true
     enabled: true
 _core:

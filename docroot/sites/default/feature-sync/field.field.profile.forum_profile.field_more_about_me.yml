@@ -1,0 +1,33 @@
+uuid: f39ea18b-d3f5-4eb6-bfda-a06fe7819ae0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_more_about_me
+    - profile.type.forum_profile
+  module:
+    - geocoder_field
+    - text
+third_party_settings:
+  geocoder_field:
+    method: none
+    field: field_general_location
+    plugins: {  }
+    dumper: wkt
+    delta_handling: default
+    failure:
+      handling: preserve
+      status_message: true
+      log: true
+id: profile.forum_profile.field_more_about_me
+field_name: field_more_about_me
+entity_type: profile
+bundle: forum_profile
+label: 'More About Me'
+description: 'Tell us a bit about yourself, your interests and how you caught the white and blue flu.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

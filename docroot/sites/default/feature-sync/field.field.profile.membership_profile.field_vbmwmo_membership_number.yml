@@ -1,0 +1,23 @@
+uuid: f4372bf1-d980-4495-956a-e015529adab9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_vbmwmo_membership_number
+    - profile.type.membership_profile
+id: profile.membership_profile.field_vbmwmo_membership_number
+field_name: field_vbmwmo_membership_number
+entity_type: profile
+bundle: membership_profile
+label: 'VBMWMO Membership Number'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

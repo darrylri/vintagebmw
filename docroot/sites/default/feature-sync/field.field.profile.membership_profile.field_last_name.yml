@@ -1,0 +1,32 @@
+uuid: a3c47a7c-75fa-4c6e-adba-675f8d2ebd3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_last_name
+    - profile.type.membership_profile
+  module:
+    - geocoder_field
+third_party_settings:
+  geocoder_field:
+    method: none
+    field: field_first_name
+    plugins: {  }
+    dumper: wkt
+    delta_handling: default
+    failure:
+      handling: preserve
+      status_message: true
+      log: true
+id: profile.membership_profile.field_last_name
+field_name: field_last_name
+entity_type: profile
+bundle: membership_profile
+label: 'Last Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

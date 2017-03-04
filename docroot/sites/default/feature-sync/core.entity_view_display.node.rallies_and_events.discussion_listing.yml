@@ -6,13 +6,14 @@ dependencies:
     - core.entity_view_mode.node.discussion_listing
     - field.field.node.rallies_and_events.body
     - field.field.node.rallies_and_events.field_address
-    - field.field.node.rallies_and_events.field_dates
+    - field.field.node.rallies_and_events.field_end_date
     - field.field.node.rallies_and_events.field_location
     - field.field.node.rallies_and_events.field_main_topic
+    - field.field.node.rallies_and_events.field_start_date
     - node.type.rallies_and_events
   module:
     - address
-    - datetime_range
+    - datetime
     - text
     - user
 id: node.rallies_and_events.discussion_listing
@@ -23,24 +24,31 @@ content:
   body:
     label: hidden
     type: text_summary_or_trimmed
-    weight: 2
+    weight: 3
     settings:
-      trim_length: 600
+      trim_length: 200
     third_party_settings: {  }
   field_address:
-    weight: 1
+    weight: 2
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: address_default
-  field_dates:
-    type: daterange_default
+  field_end_date:
+    type: datetime_default
+    weight: 1
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: short_day_month_text_year
+    third_party_settings: {  }
+  field_start_date:
+    type: datetime_default
     weight: 0
     label: hidden
     settings:
-      separator: '-'
-      format_type: medium
       timezone_override: ''
+      format_type: short_day_month_text_year
     third_party_settings: {  }
 hidden:
   field_location: true

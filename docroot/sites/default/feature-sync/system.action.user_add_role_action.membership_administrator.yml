@@ -1,0 +1,14 @@
+uuid: ae55cd90-a7ae-4692-af41-6fcbd081cb86
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.membership_administrator
+  module:
+    - user
+id: user_add_role_action.membership_administrator
+label: 'Add the Membership Administrator role to the selected users'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: membership_administrator

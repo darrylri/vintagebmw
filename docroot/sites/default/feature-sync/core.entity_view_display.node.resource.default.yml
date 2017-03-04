@@ -1,0 +1,100 @@
+uuid: 8c252124-c664-4d5b-8206-10e2a9833600
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.resource.body
+    - field.field.node.resource.field_contact_information
+    - field.field.node.resource.field_email
+    - field.field.node.resource.field_resource_address
+    - field.field.node.resource.field_resource_lotai
+    - field.field.node.resource.field_resources
+    - field.field.node.resource.field_website
+    - node.type.resource
+  module:
+    - address
+    - leaflet
+    - link
+    - text
+    - user
+id: node.resource.default
+targetEntityType: node
+bundle: resource
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  field_contact_information:
+    weight: 105
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_email:
+    weight: 104
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_resource_address:
+    weight: 106
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+  field_resource_lotai:
+    weight: 107
+    label: hidden
+    settings:
+      leaflet_map: google-roadmap
+      zoom: '7'
+      minZoom: '1'
+      maxZoom: '18'
+      height: '400'
+      icon:
+        icon_url: ''
+        shadow_url: ''
+        icon_size:
+          x: '0'
+          'y': '0'
+        icon_anchor:
+          x: '0'
+          'y': '0'
+        shadow_anchor:
+          x: '0'
+          'y': '0'
+        popup_anchor:
+          x: '0'
+          'y': '0'
+      popup: 0
+      minPossibleZoom: 0
+      maxPossibleZoom: 18
+    third_party_settings: {  }
+    type: leaflet_formatter_default
+  field_resources:
+    weight: 102
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_website:
+    weight: 103
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

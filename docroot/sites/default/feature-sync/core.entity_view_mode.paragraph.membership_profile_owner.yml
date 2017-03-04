@@ -1,0 +1,10 @@
+uuid: 1237d2f1-749f-48db-84a2-bee9b57bac49
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.membership_profile_owner
+label: 'Membership Profile - Owner'
+targetEntityType: paragraph
+cache: true

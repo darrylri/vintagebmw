@@ -1,0 +1,28 @@
+uuid: cfdd075b-b4dc-4f94-9d46-1921984e13f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bibliographic_tags
+    - node.type.bibliography
+    - taxonomy.vocabulary.bibliography
+id: node.bibliography.field_bibliographic_tags
+field_name: field_bibliographic_tags
+entity_type: node
+bundle: bibliography
+label: 'Bibliographic Tags'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      bibliography: bibliography
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

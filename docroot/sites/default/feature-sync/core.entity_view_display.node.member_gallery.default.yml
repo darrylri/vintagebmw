@@ -1,0 +1,32 @@
+uuid: 3be53d8d-aeef-4dcd-aeb4-cb12928356f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.member_gallery.body
+    - field.field.node.member_gallery.field_member_gallery
+    - node.type.member_gallery
+  module:
+    - text
+    - user
+id: node.member_gallery.default
+targetEntityType: node
+bundle: member_gallery
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  field_member_gallery:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  links:
+    weight: 100
+hidden: {  }

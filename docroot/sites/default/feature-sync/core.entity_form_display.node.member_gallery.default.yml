@@ -1,0 +1,75 @@
+uuid: 1ace175d-c360-40a3-85e8-9fc7a1846d7f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.member_gallery.body
+    - field.field.node.member_gallery.field_member_gallery
+    - node.type.member_gallery
+  module:
+    - entity_browser_entity_form
+    - inline_entity_form
+    - path
+    - text
+id: node.member_gallery.default
+targetEntityType: node
+bundle: member_gallery
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 31
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+  created:
+    type: datetime_timestamp
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+  field_member_gallery:
+    type: inline_entity_form_simple
+    weight: 32
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      override_labels: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: gallery_media_library
+  path:
+    type: path
+    weight: 30
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

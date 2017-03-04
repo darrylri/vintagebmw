@@ -1,0 +1,24 @@
+uuid: 9e456b3d-2d9d-4e2d-8f3e-e40deb7785ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_start_date
+    - node.type.rallies_and_events
+  module:
+    - datetime
+id: node.rallies_and_events.field_start_date
+field_name: field_start_date
+entity_type: node
+bundle: rallies_and_events
+label: 'Start Date'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

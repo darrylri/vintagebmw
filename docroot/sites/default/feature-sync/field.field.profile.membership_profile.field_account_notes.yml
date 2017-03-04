@@ -1,0 +1,51 @@
+uuid: 6cf02236-be90-455d-8c49-2274251b1dca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_account_notes
+    - paragraphs.paragraphs_type.account_
+    - profile.type.membership_profile
+  module:
+    - entity_reference_revisions
+id: profile.membership_profile.field_account_notes
+field_name: field_account_notes
+entity_type: profile
+bundle: membership_profile
+label: 'Account Notes'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      account_: account_
+    target_bundles_drag_drop:
+      account_:
+        enabled: true
+        weight: 9
+      bike_models:
+        weight: 10
+        enabled: false
+      forum_:
+        weight: 11
+        enabled: false
+      membership_pro:
+        weight: 12
+        enabled: false
+      motorcycle_specs:
+        weight: 13
+        enabled: false
+      serial_ranges:
+        weight: 14
+        enabled: false
+      social_media:
+        weight: 15
+        enabled: false
+      telephone_number:
+        weight: 16
+        enabled: false
+field_type: entity_reference_revisions
