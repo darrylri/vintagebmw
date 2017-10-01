@@ -1,0 +1,28 @@
+uuid: 6df56aba-96fb-4a41-9c58-5169d4b8360b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_main_topic
+    - node.type.motorcycle_model
+    - taxonomy.vocabulary.topic
+id: node.motorcycle_model.field_main_topic
+field_name: field_main_topic
+entity_type: node
+bundle: motorcycle_model
+label: 'Main Topic'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      topic: topic
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

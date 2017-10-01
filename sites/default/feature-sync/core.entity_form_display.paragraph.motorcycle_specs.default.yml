@@ -1,0 +1,101 @@
+uuid: 07995bb1-0ee9-4dd6-8c28-fb7932f0c1c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.motorcycle_specs.field_capacities_and_measurement
+    - field.field.paragraph.motorcycle_specs.field_description
+    - field.field.paragraph.motorcycle_specs.field_driveline_specs
+    - field.field.paragraph.motorcycle_specs.field_electrics
+    - field.field.paragraph.motorcycle_specs.field_model_name
+    - field.field.paragraph.motorcycle_specs.field_number_produced
+    - field.field.paragraph.motorcycle_specs.field_production_years
+    - field.field.paragraph.motorcycle_specs.field_running_gear
+    - field.field.paragraph.motorcycle_specs.field_serial_numbers
+    - paragraphs.paragraphs_type.motorcycle_specs
+  module:
+    - paragraphs
+    - range
+    - text
+id: paragraph.motorcycle_specs.default
+targetEntityType: paragraph
+bundle: motorcycle_specs
+mode: default
+content:
+  field_capacities_and_measurement:
+    weight: 8
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_description:
+    weight: 4
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+  field_driveline_specs:
+    weight: 5
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_electrics:
+    weight: 6
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_model_name:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_number_produced:
+    weight: 2
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_production_years:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: range
+    region: content
+  field_running_gear:
+    weight: 7
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_serial_numbers:
+    type: entity_reference_paragraphs
+    weight: 3
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

@@ -1,0 +1,22 @@
+uuid: f2583f90-c815-445f-a205-68e25aee3644
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - r32
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: r32_breadcrumbs
+theme: r32
+region: header
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

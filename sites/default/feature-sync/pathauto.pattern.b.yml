@@ -1,0 +1,22 @@
+uuid: 3d70d1c0-5044-4edb-83df-5b6cb5c003f5
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: b
+label: 'BMW Model content'
+type: 'canonical_entities:node'
+pattern: '/models/[node:title]'
+selection_criteria:
+  b1c02cfe-3aaf-4711-a14f-ff7ccc53ecd2:
+    id: node_type
+    bundles:
+      motorcycle_model: motorcycle_model
+    negate: false
+    context_mapping:
+      node: node
+    uuid: b1c02cfe-3aaf-4711-a14f-ff7ccc53ecd2
+selection_logic: and
+weight: -5
+relationships: {  }

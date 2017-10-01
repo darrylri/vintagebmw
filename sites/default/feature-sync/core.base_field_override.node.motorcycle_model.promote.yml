@@ -1,0 +1,22 @@
+uuid: 90074e35-b058-4416-bd7e-906dfe6fc1e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.motorcycle_model
+id: node.motorcycle_model.promote
+field_name: promote
+entity_type: node
+bundle: motorcycle_model
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

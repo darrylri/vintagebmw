@@ -1,0 +1,18 @@
+uuid: 535c10e4-8f63-4441-b430-60d30ecec815
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Discussion Thread'
+type: discussion_thread
+description: 'Introduces a new discussion topic.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

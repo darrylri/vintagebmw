@@ -1,0 +1,32 @@
+uuid: d313b7ac-a0a7-4a5d-8589-31cc63066d21
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_return_me
+    - paragraphs.paragraphs_type.membership_pro
+  module:
+    - geocoder_field
+third_party_settings:
+  geocoder_field:
+    method: none
+    field: parent_id
+    plugins: {  }
+    dumper: wkt
+    delta_handling: default
+    failure:
+      handling: preserve
+      status_message: false
+      log: false
+id: paragraph.membership_pro.field_return_me
+field_name: field_return_me
+entity_type: paragraph
+bundle: membership_pro
+label: 'Return Message'
+description: 'Used when membership status is set to Lost Contact, to capture any information that the Post Office supplies regarding returned mail.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,35 @@
+uuid: 8478cfd1-bb27-4828-85e3-368fc79898a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.motorcycle_model.field_main_topic
+    - field.field.node.motorcycle_model.field_motorcycle_specifications
+    - field.field.node.motorcycle_model.field_representative_imab
+    - node.type.motorcycle_model
+  module:
+    - responsive_image
+    - user
+id: node.motorcycle_model.teaser
+targetEntityType: node
+bundle: motorcycle_model
+mode: teaser
+content:
+  field_representative_imab:
+    type: responsive_image
+    weight: 1
+    label: hidden
+    settings:
+      responsive_image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_main_topic: true
+  field_motorcycle_specifications: true

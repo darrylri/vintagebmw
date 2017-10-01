@@ -1,0 +1,32 @@
+uuid: d314d817-e679-450f-90b0-ff939a7ea6aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.telephone_number.field_phone_number
+    - field.field.paragraph.telephone_number.field_phone_type
+    - paragraphs.paragraphs_type.telephone_number
+id: paragraph.telephone_number.default
+targetEntityType: paragraph
+bundle: telephone_number
+mode: default
+content:
+  field_phone_number:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_phone_type:
+    weight: 0
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden:
+  created: true
+  uid: true

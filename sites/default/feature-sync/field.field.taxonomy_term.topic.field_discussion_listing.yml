@@ -1,0 +1,35 @@
+uuid: bb8f19b1-f30d-44ea-88f9-2f99377cfb7a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_discussion_listing
+    - taxonomy.vocabulary.topic
+    - views.view.discussions
+  module:
+    - viewsreference
+id: taxonomy_term.topic.field_discussion_listing
+field_name: field_discussion_listing
+entity_type: taxonomy_term
+bundle: topic
+label: 'Discussion Listing'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    display_id: block_1
+    argument: ''
+    title: 1
+    target_uuid: 3b4e02ff-1562-44f5-93ba-a845889a9f9e
+default_value_callback: ''
+settings:
+  plugin_types:
+    block: block
+    default: 0
+    page: 0
+    feed: 0
+    entity_browser: 0
+  handler: 'default:view'
+  handler_settings: {  }
+field_type: viewsreference

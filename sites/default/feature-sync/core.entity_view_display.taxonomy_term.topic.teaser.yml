@@ -1,0 +1,33 @@
+uuid: 68803059-3327-4f9b-9071-999d3d2e3a7f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.teaser
+    - field.field.taxonomy_term.topic.field_discussion_listing
+    - taxonomy.vocabulary.topic
+  module:
+    - text
+    - viewsreference
+id: taxonomy_term.topic.teaser
+targetEntityType: taxonomy_term
+bundle: topic
+mode: teaser
+content:
+  description:
+    type: text_default
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_discussion_listing:
+    type: viewsreference_formatter
+    weight: 1
+    label: hidden
+    settings:
+      plugin_types:
+        - block
+    third_party_settings: {  }
+    region: content
+hidden: {  }

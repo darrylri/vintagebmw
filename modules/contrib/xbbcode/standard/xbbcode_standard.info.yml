@@ -1,0 +1,13 @@
+name: Standard tags
+type: module
+description: A set of standard BBCode tags.
+# core: 8.x
+package: Extensible BBCode
+dependencies:
+  - xbbcode:xbbcode
+
+# Information added by Drupal.org packaging script on 2017-07-19
+version: '8.x-3.0-rc3'
+core: '8.x'
+project: 'xbbcode'
+datestamp: 1500482645

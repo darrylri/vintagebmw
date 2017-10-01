@@ -1,0 +1,87 @@
+definitions:
+  contact__site_page:
+    enabled: true
+    menu_name: footer
+    parent: ''
+    weight: 0
+    expanded: false
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__topics__16':
+    weight: -48
+    menu_name: main
+    parent: ''
+    enabled: true
+    expanded: false
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__topics__10':
+    weight: -47
+    menu_name: main
+    parent: ''
+    expanded: false
+    enabled: true
+  standard__front_page:
+    weight: -50
+    menu_name: main
+    parent: ''
+    expanded: false
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__topics__1':
+    weight: -49
+    menu_name: main
+    parent: ''
+    expanded: false
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__topics__3':
+    weight: -46
+    menu_name: main
+    parent: ''
+    expanded: false
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__topics__4':
+    weight: -43
+    menu_name: main
+    parent: ''
+    expanded: false
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__topics__2':
+    weight: -45
+    menu_name: main
+    parent: ''
+    expanded: false
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__topics__5':
+    weight: -44
+    menu_name: main
+    parent: ''
+    expanded: false
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__topics__6':
+    weight: -50
+    menu_name: main
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.topics.16'
+    enabled: true
+    expanded: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__topics__8':
+    weight: -48
+    menu_name: main
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.topics.16'
+    expanded: true
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__topics__15':
+    weight: -47
+    menu_name: main
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.topics.16'
+    expanded: true
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__topics__9':
+    weight: -46
+    menu_name: main
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.topics.16'
+    expanded: true
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__topics__7':
+    weight: -49
+    menu_name: main
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.topics.16'
+    expanded: true
+    enabled: true
+_core:
+  default_config_hash: jdY7AU0tU-QsjmiOw3W8vwpYMb-By--_MSFgbqKUTYM

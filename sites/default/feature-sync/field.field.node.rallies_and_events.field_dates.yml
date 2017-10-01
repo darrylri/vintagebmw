@@ -1,0 +1,26 @@
+uuid: 6aa9e0db-726d-4ffc-b373-9e757d8b21ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dates
+    - node.type.rallies_and_events
+  module:
+    - datetime_range
+id: node.rallies_and_events.field_dates
+field_name: field_dates
+entity_type: node
+bundle: rallies_and_events
+label: Dates
+description: 'If the rally is one day only, just fill in the Start date.'
+required: true
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+    default_end_date_type: ''
+    default_end_date: ''
+default_value_callback: ''
+settings: {  }
+field_type: daterange

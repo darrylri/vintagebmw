@@ -1,0 +1,23 @@
+uuid: 0f80f735-a58d-490e-ab9b-e4b10ef5dafe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_year
+    - paragraphs.paragraphs_type.bike_models
+id: paragraph.bike_models.field_year
+field_name: field_year
+entity_type: paragraph
+bundle: bike_models
+label: Year
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1916
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

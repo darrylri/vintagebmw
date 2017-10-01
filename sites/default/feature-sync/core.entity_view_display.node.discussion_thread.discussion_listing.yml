@@ -1,0 +1,39 @@
+uuid: 20b6cdac-aa99-4414-9ada-b597be935f06
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment.discussion_listing
+    - core.entity_view_mode.node.discussion_listing
+    - field.field.node.discussion_thread.comment
+    - field.field.node.discussion_thread.field_discussion
+    - field.field.node.discussion_thread.field_main_topic
+    - node.type.discussion_thread
+  module:
+    - comment
+    - text
+    - user
+id: node.discussion_thread.discussion_listing
+targetEntityType: node
+bundle: discussion_thread
+mode: discussion_listing
+content:
+  comment:
+    type: comment_default
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: discussion_listing
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
+  field_discussion:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  field_main_topic: true
+  links: true

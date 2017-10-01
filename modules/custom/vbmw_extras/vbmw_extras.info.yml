@@ -1,0 +1,5 @@
+name: VBMWMO Extras
+type: module
+description: Extra helpers for the site
+core: 8.x
+package: VBMWMO

@@ -1,0 +1,6 @@
+uuid: 803f5045-e730-42be-b8c0-ba23d2d46247
+langcode: en
+status: true
+dependencies: {  }
+id: forum_
+label: 'Forum profile'

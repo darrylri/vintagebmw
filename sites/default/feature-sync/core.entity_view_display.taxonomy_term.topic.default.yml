@@ -1,0 +1,32 @@
+uuid: b4efa311-1b6d-4364-9f3c-b5419e181023
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.topic.field_discussion_listing
+    - taxonomy.vocabulary.topic
+  module:
+    - text
+    - viewsreference
+id: taxonomy_term.topic.default
+targetEntityType: taxonomy_term
+bundle: topic
+mode: default
+content:
+  description:
+    type: text_default
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_discussion_listing:
+    type: viewsreference_formatter
+    weight: 1
+    label: hidden
+    settings:
+      plugin_types:
+        - block
+    third_party_settings: {  }
+    region: content
+hidden: {  }

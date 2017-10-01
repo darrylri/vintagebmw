@@ -1,0 +1,29 @@
+uuid: dc318092-ed76-4e14-9e52-50f101c50444
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_production_years
+    - paragraphs.paragraphs_type.motorcycle_specs
+  module:
+    - range
+id: paragraph.motorcycle_specs.field_production_years
+field_name: field_production_years
+entity_type: paragraph
+bundle: motorcycle_specs
+label: 'Production Years'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1916
+  max: null
+  from:
+    prefix: ''
+    suffix: ''
+  to:
+    prefix: ''
+    suffix: ''
+field_type: range_integer

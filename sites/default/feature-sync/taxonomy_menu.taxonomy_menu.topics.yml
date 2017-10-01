@@ -1,0 +1,14 @@
+uuid: a5626960-a3ca-4a81-864b-5330fdf7dcae
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+    - taxonomy.vocabulary.topic
+id: topics
+label: Topics
+vocabulary: topic
+menu: main
+expanded: true
+depth: 2
+menu_parent: 'main:'

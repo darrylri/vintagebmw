@@ -1,0 +1,22 @@
+uuid: c36c9065-dc63-4ba0-a9a2-6892476601b0
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - r32
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: r32_messages
+theme: r32
+region: header
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }
