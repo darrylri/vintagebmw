@@ -1,0 +1,10 @@
+uuid: 8b99d369-c9b2-4512-b719-c79054defae7
+langcode: en
+status: true
+dependencies:
+  module:
+    - comment
+id: comment.discussion_listing
+label: 'Discussion Listing'
+targetEntityType: comment
+cache: true

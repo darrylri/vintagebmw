@@ -1,0 +1,51 @@
+uuid: 494637b3-8710-4eb1-9e09-34c068b35edc
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.discussion_listing
+    - field.field.node.rallies_and_events.body
+    - field.field.node.rallies_and_events.field_address
+    - field.field.node.rallies_and_events.field_dates
+    - field.field.node.rallies_and_events.field_location
+    - field.field.node.rallies_and_events.field_main_topic
+    - node.type.rallies_and_events
+  module:
+    - address
+    - datetime_range
+    - text
+    - user
+id: node.rallies_and_events.discussion_listing
+targetEntityType: node
+bundle: rallies_and_events
+mode: discussion_listing
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 2
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_address:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+    region: content
+  field_dates:
+    type: daterange_default
+    weight: 0
+    label: hidden
+    settings:
+      separator: '-'
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_location: true
+  field_main_topic: true
+  links: true

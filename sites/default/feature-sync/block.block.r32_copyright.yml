@@ -1,0 +1,25 @@
+uuid: 7ff660ff-f94a-4c9f-a485-cdd1e4a8a296
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a533bf54-dc94-44e8-ab30-95aca70dfa15'
+  module:
+    - block_content
+  theme:
+    - r32
+id: r32_copyright
+theme: r32
+region: header
+weight: -7
+provider: null
+plugin: 'block_content:a533bf54-dc94-44e8-ab30-95aca70dfa15'
+settings:
+  id: 'block_content:a533bf54-dc94-44e8-ab30-95aca70dfa15'
+  label: Copyright
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

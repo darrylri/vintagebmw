@@ -1,0 +1,93 @@
+uuid: 5d8e4661-6d17-4815-91f9-568dde0ba4cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.motorcycle_specs.field_capacities_and_measurement
+    - field.field.paragraph.motorcycle_specs.field_description
+    - field.field.paragraph.motorcycle_specs.field_driveline_specs
+    - field.field.paragraph.motorcycle_specs.field_electrics
+    - field.field.paragraph.motorcycle_specs.field_model_name
+    - field.field.paragraph.motorcycle_specs.field_number_produced
+    - field.field.paragraph.motorcycle_specs.field_production_years
+    - field.field.paragraph.motorcycle_specs.field_running_gear
+    - field.field.paragraph.motorcycle_specs.field_serial_numbers
+    - paragraphs.paragraphs_type.motorcycle_specs
+  module:
+    - entity_reference_revisions
+    - range
+    - text
+id: paragraph.motorcycle_specs.default
+targetEntityType: paragraph
+bundle: motorcycle_specs
+mode: default
+content:
+  field_capacities_and_measurement:
+    weight: 7
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_description:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_driveline_specs:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_electrics:
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_number_produced:
+    weight: 1
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_production_years:
+    weight: 0
+    label: inline
+    settings:
+      range_separator: '-'
+      thousand_separator: ''
+      range_combine: true
+      from_prefix_suffix: false
+      to_prefix_suffix: false
+    third_party_settings: {  }
+    type: range_integer
+    region: content
+  field_running_gear:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_serial_numbers:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  field_model_name: true
+  uid: true

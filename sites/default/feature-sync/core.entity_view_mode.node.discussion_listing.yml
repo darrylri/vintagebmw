@@ -1,0 +1,10 @@
+uuid: c0ac3afb-7b00-4920-a218-4f2254d2cedf
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.discussion_listing
+label: 'Discussion Listing'
+targetEntityType: node
+cache: true

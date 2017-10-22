@@ -1,0 +1,64 @@
+id: vbmw_migrate_user_role
+label: User roles
+migration_group: vbmw_migrate
+migration_tags:
+  - Drupal 6
+source:
+  plugin: d6_user_role
+process:
+  id:
+    -
+      plugin: static_map
+      source: name
+      map:
+        'anonymous user':               anonymous
+        'authenticated user':           authenticated
+        'Member, Current':              member_current
+        'Member, Lapsed':               member_lapsed
+        'Member, NON':                  member_non
+        'Editor, Bulletin':             editor_magazine
+        'Editor, Events':               editor_events
+        'Editor, News':                 editor_news
+        'Editor, Links and Resources':  editor_resources
+        'Editor, Galleries':            editor_galleries
+        'Editor, Bibliography':         editor_bibliography
+        'Site Administrator':           site_administrator
+        'Membership Administrator':     membership_administrator
+        'Store Administrator':          store_administrator
+        'Forum Admin':                  forum_administrator
+        'Forum Moderator':              forum_moderator
+      default_value: ''
+    -
+      plugin: skip_on_empty
+      method: row
+  label:
+    -
+      plugin: static_map
+      source: name
+      map:
+        'anonymous user':               'Anonymous User'
+        'authenticated user':           'Authenticated User'
+        'Member, Current':              'Member, Current'
+        'Member, Lapsed':               'Member, Lapsed'
+        'Member, NON':                  'Member, NON'
+        'Editor, Bulletin':             'Editor, Magazine'
+        'Editor, Events':               'Editor, Events'
+        'Editor, News':                 'Editor, News'
+        'Editor, Links and Resources':  'Editor, Links and Resources'
+        'Editor, Galleries':            'Editor, Galleries'
+        'Editor, Bibliography':         'Editor, Bibliography'
+        'Site Administrator':           'Site Administrator'
+        'Membership Administrator':     'Membership Administrator'
+        'Store Administrator':          'Store Administrator'
+        'Forum Admin':                  'Forum Administrator'
+        'Forum Moderator':              'Forum Moderator'
+      default_value:            ''
+    -
+      plugin: skip_on_empty
+      method: row
+
+destination:
+  plugin: entity:user_role
+migration_dependencies:
+  required:
+    - vbmw_migrate_filter_format

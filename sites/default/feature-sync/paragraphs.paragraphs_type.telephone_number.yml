@@ -1,0 +1,6 @@
+uuid: 1b3470be-0e97-4f35-8a97-3e8306fd8337
+langcode: en
+status: true
+dependencies: {  }
+id: telephone_number
+label: 'Telephone Number'

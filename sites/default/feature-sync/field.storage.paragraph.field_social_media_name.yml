@@ -1,0 +1,21 @@
+uuid: 997cc9b5-8729-42fb-a1ed-c845329b77e9
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_social_media_name
+field_name: field_social_media_name
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

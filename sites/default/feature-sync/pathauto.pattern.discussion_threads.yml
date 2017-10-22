@@ -1,0 +1,22 @@
+uuid: 46900763-506e-4856-8c1b-4116ae5a880f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: discussion_threads
+label: 'Discussion Threads'
+type: 'canonical_entities:node'
+pattern: '/[node:field_main_topic]/[node:created:html_month]-[node:title]'
+selection_criteria:
+  a49a10a7-fdc2-4adf-a9f0-73a5a02a1dbf:
+    id: node_type
+    bundles:
+      discussion_thread: discussion_thread
+    negate: false
+    context_mapping:
+      node: node
+    uuid: a49a10a7-fdc2-4adf-a9f0-73a5a02a1dbf
+selection_logic: and
+weight: -5
+relationships: {  }

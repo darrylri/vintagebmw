@@ -1,0 +1,17 @@
+uuid: 61d64712-19a0-4faa-95b5-6d78d9c0ac75
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Motorcycle Model'
+type: motorcycle_model
+description: 'Information about a particular BMW motorcycle'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,32 @@
+uuid: 15bbbe66-776b-4047-9907-ad7e4a32787d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.discussion_listing
+    - field.field.node.motorcycle_model.field_main_topic
+    - field.field.node.motorcycle_model.field_motorcycle_specifications
+    - field.field.node.motorcycle_model.field_representative_imab
+    - image.style.medium
+    - node.type.motorcycle_model
+  module:
+    - image
+    - user
+id: node.motorcycle_model.discussion_listing
+targetEntityType: node
+bundle: motorcycle_model
+mode: discussion_listing
+content:
+  field_representative_imab:
+    type: image
+    weight: 0
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: content
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_main_topic: true
+  field_motorcycle_specifications: true
+  links: true

@@ -1,0 +1,23 @@
+uuid: 59be8b6e-a46f-4dd6-8dae-1cf07249b3ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_participating_m
+    - taxonomy.vocabulary.membership_status
+id: taxonomy_term.membership_status.field_participating_m
+field_name: field_participating_m
+entity_type: taxonomy_term
+bundle: membership_status
+label: 'Participating Member'
+description: 'Select this if people with this status can participate in the club''s activities as regular members.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

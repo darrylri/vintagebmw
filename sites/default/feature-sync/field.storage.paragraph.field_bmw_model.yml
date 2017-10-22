@@ -1,0 +1,21 @@
+uuid: 7973dabe-29e9-48f7-ac42-c882ef866215
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_bmw_model
+field_name: field_bmw_model
+entity_type: paragraph
+type: string
+settings:
+  max_length: 31
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

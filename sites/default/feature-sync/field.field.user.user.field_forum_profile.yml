@@ -1,0 +1,42 @@
+uuid: 8f648659-91d3-483d-b317-9d6b6789b4bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_forum_profile
+    - paragraphs.paragraphs_type.forum_
+  module:
+    - entity_reference_revisions
+    - user
+id: user.user.field_forum_profile
+field_name: field_forum_profile
+entity_type: user
+bundle: user
+label: 'Forum Profile'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      forum_: forum_
+    target_bundles_drag_drop:
+      forum_:
+        enabled: true
+        weight: 6
+      membership_pro:
+        weight: 7
+        enabled: false
+      motorcycle_specs:
+        weight: 8
+        enabled: false
+      serial_ranges:
+        weight: 9
+        enabled: false
+      social_media:
+        weight: 10
+        enabled: false
+field_type: entity_reference_revisions

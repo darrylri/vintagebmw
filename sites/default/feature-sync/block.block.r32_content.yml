@@ -1,0 +1,22 @@
+uuid: 5f9f5d3a-9559-409d-86ff-11a5cb22e06f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - r32
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: r32_content
+theme: r32
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

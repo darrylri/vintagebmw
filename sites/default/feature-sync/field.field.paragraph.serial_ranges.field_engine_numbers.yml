@@ -1,0 +1,29 @@
+uuid: 4903b144-83c6-4d94-ac7b-aab318f1c38f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_engine_numbers
+    - paragraphs.paragraphs_type.serial_ranges
+  module:
+    - range
+id: paragraph.serial_ranges.field_engine_numbers
+field_name: field_engine_numbers
+entity_type: paragraph
+bundle: serial_ranges
+label: 'Engine Numbers'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: null
+  from:
+    prefix: ''
+    suffix: ''
+  to:
+    prefix: ''
+    suffix: ''
+field_type: range_integer

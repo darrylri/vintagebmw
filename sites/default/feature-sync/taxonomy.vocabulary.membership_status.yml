@@ -1,0 +1,9 @@
+uuid: c44de803-03a6-40fe-b8aa-a2aa552403d2
+langcode: en
+status: true
+dependencies: {  }
+name: 'Membership Status'
+vid: membership_status
+description: ''
+hierarchy: 0
+weight: 0

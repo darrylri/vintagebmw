@@ -1,0 +1,42 @@
+uuid: 679ab087-630a-4b04-928f-553f2f3f4e93
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.serial_ranges.field_engine_numbers
+    - field.field.paragraph.serial_ranges.field_frame_numbers
+    - paragraphs.paragraphs_type.serial_ranges
+  module:
+    - range
+id: paragraph.serial_ranges.default
+targetEntityType: paragraph
+bundle: serial_ranges
+mode: default
+content:
+  field_engine_numbers:
+    weight: 1
+    label: above
+    settings:
+      range_separator: '-'
+      thousand_separator: ''
+      range_combine: true
+      from_prefix_suffix: false
+      to_prefix_suffix: false
+    third_party_settings: {  }
+    type: range_integer
+    region: content
+  field_frame_numbers:
+    weight: 0
+    label: above
+    settings:
+      range_separator: '-'
+      thousand_separator: ''
+      range_combine: true
+      from_prefix_suffix: false
+      to_prefix_suffix: false
+    third_party_settings: {  }
+    type: range_integer
+    region: content
+hidden:
+  created: true
+  uid: true

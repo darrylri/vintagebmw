@@ -1,0 +1,32 @@
+uuid: 74500aff-c80b-4fd6-93a8-164ecad6a332
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.telephone_number.field_phone_number
+    - field.field.paragraph.telephone_number.field_phone_type
+    - paragraphs.paragraphs_type.telephone_number
+  module:
+    - telephone
+id: paragraph.telephone_number.default
+targetEntityType: paragraph
+bundle: telephone_number
+mode: default
+content:
+  field_phone_number:
+    weight: 1
+    settings:
+      placeholder: 'eg: +1-999-999-9999 for US numbers'
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
+  field_phone_type:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

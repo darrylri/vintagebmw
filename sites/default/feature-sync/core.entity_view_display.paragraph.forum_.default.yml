@@ -1,0 +1,68 @@
+uuid: eaa2bf52-cd54-4197-87f0-bfc286d560b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.forum_.field_location
+    - field.field.paragraph.forum_.field_more_about_me
+    - field.field.paragraph.forum_.field_my_bike_models
+    - field.field.paragraph.forum_.field_personal_website
+    - field.field.paragraph.forum_.field_social_media
+    - paragraphs.paragraphs_type.forum_
+  module:
+    - entity_reference_revisions
+    - link
+    - text
+id: paragraph.forum_.default
+targetEntityType: paragraph
+bundle: forum_
+mode: default
+content:
+  field_location:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_more_about_me:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_my_bike_models:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_personal_website:
+    weight: 3
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_social_media:
+    type: entity_reference_revisions_entity_view
+    weight: 4
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  uid: true

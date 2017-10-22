@@ -1,0 +1,9 @@
+uuid: 07ef3fe3-7c96-47a8-bdf9-df28b57bc143
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: rAkKEL1yw7HR5CaKyRy_NigxVsxr7M13yfnhwdeGBZ4
+name: gallery_item
+label: 'Gallery item'
+effects: {  }

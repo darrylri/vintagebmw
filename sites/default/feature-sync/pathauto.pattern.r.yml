@@ -1,0 +1,22 @@
+uuid: 30143e6e-7633-4050-a367-dbb634bab9ed
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: r
+label: Rally/Event
+type: 'canonical_entities:node'
+pattern: '/rallies/[node:field_dates:value]-[node:title]'
+selection_criteria:
+  4ab7e3d6-609e-4826-8f01-2f7c5b6e725f:
+    id: node_type
+    bundles:
+      rallies_and_events: rallies_and_events
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 4ab7e3d6-609e-4826-8f01-2f7c5b6e725f
+selection_logic: and
+weight: -5
+relationships: {  }

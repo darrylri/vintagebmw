@@ -1,0 +1,18 @@
+uuid: 5420d786-2749-473a-98fd-b1b5c0d54976
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Rallies and Events'
+type: rallies_and_events
+description: 'Information for attending a rally or event.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

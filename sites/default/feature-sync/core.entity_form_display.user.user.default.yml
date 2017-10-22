@@ -1,0 +1,70 @@
+uuid: 55ae221f-dd95-42da-82ee-52a98bb58802
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.field_forum_profile
+    - field.field.user.user.field_member
+    - field.field.user.user.user_picture
+    - image.style.thumbnail
+  module:
+    - image
+    - paragraphs
+    - path
+    - user
+_core:
+  default_config_hash: LLAieeozVsoZDb-2PbFxRJpQqnKmpR7-4OoRJnduz-U
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  account:
+    weight: -10
+    region: content
+  contact:
+    weight: 5
+    region: content
+  field_forum_profile:
+    type: entity_reference_paragraphs
+    weight: 31
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+    third_party_settings: {  }
+    region: content
+  field_member:
+    type: entity_reference_paragraphs
+    weight: 32
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+    third_party_settings: {  }
+    region: content
+  language:
+    weight: 0
+    region: content
+  path:
+    type: path
+    weight: 30
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  timezone:
+    weight: 6
+    region: content
+  user_picture:
+    type: image_image
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    weight: -1
+    region: content
+hidden: {  }

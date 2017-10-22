@@ -1,0 +1,24 @@
+uuid: 67b4bc48-138f-4b9a-9795-b56a57679785
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_driveline_specs
+    - paragraphs.paragraphs_type.motorcycle_specs
+  module:
+    - text
+id: paragraph.motorcycle_specs.field_driveline_specs
+field_name: field_driveline_specs
+entity_type: paragraph
+bundle: motorcycle_specs
+label: 'Driveline Specs'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: "<table>\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td class=\"specs-key\">Displacement</td>\r\n\t\t\t<td class=\"specs-value\">XXX</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td class=\"specs-key\">Cylinders</td>\r\n\t\t\t<td class=\"specs-value\">XXX</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td class=\"specs-key\">Bore x Stroke (mm)</td>\r\n\t\t\t<td class=\"specs-value\">XXX</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td class=\"specs-key\">HP @ RPM</td>\r\n\t\t\t<td class=\"specs-value\">XXX</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td class=\"specs-key\">Compression Ratio</td>\r\n\t\t\t<td class=\"specs-value\">XXX</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td class=\"specs-key\">Valves</td>\r\n\t\t\t<td class=\"specs-value\">XXX</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td class=\"specs-key\">Carburetor(s)</td>\r\n\t\t\t<td class=\"specs-value\">XXX</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td class=\"specs-key\">Clutch</td>\r\n\t\t\t<td class=\"specs-value\">XXX</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td class=\"specs-key\">Transmission</td>\r\n\t\t\t<td class=\"specs-value\">XXX</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td class=\"specs-key\">Final Drive</td>\r\n\t\t\t<td class=\"specs-value\">XXX</td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n"
+    format: full_html
+default_value_callback: ''
+settings: {  }
+field_type: text_long

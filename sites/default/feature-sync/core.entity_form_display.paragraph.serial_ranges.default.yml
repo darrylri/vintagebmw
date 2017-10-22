@@ -1,0 +1,31 @@
+uuid: 73bfea1b-f3fc-41e5-b0af-dc4e14fa07cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.serial_ranges.field_engine_numbers
+    - field.field.paragraph.serial_ranges.field_frame_numbers
+    - paragraphs.paragraphs_type.serial_ranges
+  module:
+    - range
+id: paragraph.serial_ranges.default
+targetEntityType: paragraph
+bundle: serial_ranges
+mode: default
+content:
+  field_engine_numbers:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: range
+    region: content
+  field_frame_numbers:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: range
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

@@ -1,0 +1,9 @@
+uuid: 46c21cbf-66df-479a-b288-7d7d30b8d409
+langcode: en
+status: true
+dependencies: {  }
+name: 'Phone number type'
+vid: phone_number_type
+description: ''
+hierarchy: 0
+weight: 0
